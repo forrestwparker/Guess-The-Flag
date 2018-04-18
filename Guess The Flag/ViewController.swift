@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var countries = [String]()
     var correctAnswer = 0
@@ -50,17 +51,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        var title: String
+        var result: String
         if sender.tag == correctAnswer {
-            title = "Correct"
+            result = "Correct"
             score += 1
         } else {
-            title = "Wrong"
+            result = "Wrong"
             score -= 1
         }
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
-        present(ac, animated: true)
+        scoreLabel.text = "Your last guess was \(result).\n"+"Your current score is \(score)."
+        askQuestion()
     }
     
     override func didReceiveMemoryWarning() {
