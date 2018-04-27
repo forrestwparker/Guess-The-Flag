@@ -10,3 +10,6 @@ Modified by [Project 6: Auto Layout](https://www.hackingwithswift.com/read/6/ove
 
 #### Description
 "Get to grips with Auto Layout using practical examples and code."
+
+#### Note
+Score label does not display correctly (at least on an iPhone 5s) when running app in a landscape orientation.
