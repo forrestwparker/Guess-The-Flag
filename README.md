@@ -3,3 +3,10 @@ My implementation of [Project 2: Guess The Flag](https://www.hackingwithswift.co
 
 #### Description
 "Make a game using UIKit, and learn about integers, buttons, colors and actions."
+
+---
+
+Modified by [Project 6: Auto Layout](https://www.hackingwithswift.com/read/6/overview).
+
+#### Description
+"Get to grips with Auto Layout using practical examples and code."
